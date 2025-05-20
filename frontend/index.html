@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Lista de Usuários</h2>
+
+        <div class="barra-superior">
+            <input type="text" id="campoFiltro" placeholder="Buscar por nome ou e-mail">
+
+            <button class="botao-cadastrar" onclick="window.location.href='cadastro.html'" >+ Cadastrar</button>
+        </div>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Idade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabelaUsuarios"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
